@@ -1,0 +1,40 @@
+{
+  "ProjectName": "Registration",
+  "ProjectGuid": "828390d2-0189-4c6d-ac99-6364909a0b43",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.Registration",
+  "DisplayName": "Registration",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "AndroidPermissions": [],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{2b58925b-407f-41d5-8388-26c28213c2a0}",
+  "WP8ProductID": "{8ef0a359-4b98-47a3-b486-a388dd2300a9}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.Registration",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
