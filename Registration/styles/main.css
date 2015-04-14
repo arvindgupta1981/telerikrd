@@ -1,0 +1,89 @@
+.current-state {
+            float: left;
+            width: 200px;
+            margin: 60px 85px 0 0
+        }
+
+        .current-state pre {
+            font-size: 12px;
+        }
+
+        .registration h3 {
+            font-size: 2.5em;
+            color: #787878;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .registration {
+            float: left;
+            clear: left;
+            width: 370px;
+            height: 131px;
+            margin: 30px 0 30px 30px;
+            padding: 60px 0 30px 30px;
+            background: url('../content/web/mvvm/regForm.png') transparent no-repeat 0 0;
+        }
+
+        .registration ul {
+        	list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .registration li {
+        	height: 28px;
+        	vertical-align: middle;
+        	color: #000;
+        }
+
+        .registration ul label {
+        	display: inline-block;
+        	width: 100px;
+        	text-align: right;
+        	padding-right: 5px;
+        	color: #000;
+        }
+
+        .registration label {
+        	color: #000;
+        }
+
+        .registration ul input {
+        	border: 1px solid #ddd;
+        }
+
+        .registration button {
+        	float: right;
+        	margin-right: 85px;
+        }
+
+        .confirmation {
+            float: left;
+            clear: left;
+            width: 274px;
+            height: 65px;
+            margin: 30px 0 30px 30px;
+            padding: 20px 30px;
+            background: url('../content/web/mvvm/confirm.png') transparent no-repeat 0 0;
+            text-align: center;
+        }
+
+        .code-details > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .code-details li
+        {
+            height: 26px;
+            line-height: 22px;
+            vertical-align: middle;
+        }
+
+        .code-details {
+            padding: 1em;
+        }
+        .box {
+            clear: both;
+        }

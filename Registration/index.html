@@ -3,14 +3,64 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
-    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="kendo/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="kendo/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="kendo/styles/kendo.dataviz.min.css" />
+    <link rel="stylesheet" href="kendo/styles/kendo.dataviz.default.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
 
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="kendo/js/kendo.all.min.js"></script>
+    <script src="scripts/database-service.js"></script>
     
 </head>
 <body>
+    <div id="example">
+    <div class="registration">
+        <form>
+            <ul>
+                <li><label for="fname">First Name:</label><input id="fname" data-bind="value: firstName" /></li>
+                <li><label for="lname">Last Name:</label><input id="lname" data-bind="value: lastName" /></li>
+                <li><label for="gender">Gender:</label><select id="gender" data-bind="source: genders, value: gender"></select></li>
+                <li><label for="address">Address:</label><input id="address" data-bind="value: address"/></li>
+                <li><label for="email">Email:</label><input id="email" data-bind="value: email"/></li>
+                <li><label for="phone">Phone:</label><input id="phone" data-bind="value: phone"/></li>
+                <li><label for="dob">Date Of Birth:</label><input id="dob" data-bind="value: dob"/></li>
+            </ul>
+            <input type="checkbox" id="agree" data-bind="checked: agreed" /> <label for="agree">I have read the licence agreement</label>
+            <br /><br />
+            <button data-bind="enabled: agreed, click: register" style="display: block" onclick="addRegister(); return false;">Register</button>
+        </form>
+    </div>
+        <div class="current-state">
+                <div class="current-state">
+                    <div class="current-state">List:</div>
+                    <ul id="registerItems"></ul>
+                </div>
+                <div>test</div>
+            </div> 
+        
+    <div class="current-state">
+        <h4>Current view model state:</h4>
+        <pre>
+    {
+        firstName: <span data-bind="text: firstName"></span>,
+        lastName: <span data-bind="text: lastName"></span>,
+        gender: <span data-bind="text: gender"></span>,
+        agreed: <span data-bind="text: agreed"></span>
+    }
+        </pre>
+    </div>
+   <div id="grid" data-role="view"></div>
+
+        
+    <div class="confirmation" data-bind="visible: confirmed">
+        Thank you for your registration, <span data-bind="text: firstName"></span> <span data-bind="text: lastName"></span>
+        <br /><br />
+        <button data-bind="click: startOver">Start Over</button>
+    </div>
+   </div>
     
 </body>
 </html>
