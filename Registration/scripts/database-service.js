@@ -87,20 +87,18 @@ app.refresh = function() {
 					  app.onError);
 	});
     
+    var people = [
+{ firstName: "Hasibul", lastName: "Haque", email: "hasibul2363@gmail.com" }
+, { firstName: "Jane", lastName: "Smith", email: "jane.smith@kendoui.com" }
+];
+    
     $("#grid").kendoGrid({
-       columns: [{
-                                field: "name",
-                                title: "Name",
-                                width: 200
-                            }, {
-                                field: "lname",
-                                title: "Last Name"
-                            }],
-       dataSource: render,
-       filterable: true,
-       columnMenu: true,
-       mobile: true,
-       height: 100 
+       scrollable: true,
+        sortable: true,
+        pageable: true,
+        selectable: "row",
+        filterable: true,
+       dataSource: { data: viewModel, pageSize: 10 }
     });
 }
 
